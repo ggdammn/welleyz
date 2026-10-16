@@ -35,7 +35,7 @@ Source: "{#Stage}\release.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\welleyz.ico"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\THIRD-PARTY-NOTICES.md"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\README.md"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#Stage}\WELLEYZ_USER_GUIDE_RU_EN.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#Stage}\Manual.md"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\Syne-OFL.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\Outfit-OFL.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#Stage}\Sarina-OFL.txt"; DestDir: "{app}"; Flags: ignoreversion

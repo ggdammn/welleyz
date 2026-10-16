@@ -26,7 +26,7 @@ Use **Windows Settings → Apps → Installed apps → welleyz → Uninstall**, 
 - `Standalone\welleyz.exe` — standalone synth
 - `Setup.bat` — convenience launcher for the graphical installer
 - `release.json` — version, package hashes, and update-check configuration
-- `WELLEYZ_USER_GUIDE_RU_EN.md` — English and Russian user guide
+- `Manual.md` — user guide
 - `THIRD-PARTY-NOTICES.md` — bundled font attribution and license
 
 ## Update notifications

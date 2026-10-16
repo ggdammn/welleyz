@@ -71,7 +71,7 @@ def main() -> None:
     copy(ROOT / "src" / "assets" / "standalone-icon.ico", STAGE / "welleyz.ico")
     for name in ("Setup.bat", "README.md", "CHANGELOG.md", "THIRD-PARTY-NOTICES.md"):
         copy(ROOT / "packaging" / name, STAGE / name)
-    copy(ROOT / "WELLEYZ_USER_GUIDE_RU_EN.md", STAGE / "WELLEYZ_USER_GUIDE_RU_EN.md")
+    copy(ROOT / "src" / "resources" / "Manual.md", STAGE / "Manual.md")
     for font in ("Syne", "Outfit", "Sarina"):
         copy(ROOT / "src" / "assets" / "fonts" / f"{font}-OFL.txt", STAGE / f"{font}-OFL.txt")
 
@@ -96,7 +96,7 @@ def main() -> None:
                 archive.write(path, path.relative_to(STAGE))
     with ZipFile(ARCHIVE) as archive:
         required = {*binaries, setup.name, "release.json", "README.md",
-                    "WELLEYZ_USER_GUIDE_RU_EN.md", "Setup.bat"}
+                    "Manual.md", "Setup.bat"}
         if not required.issubset(archive.namelist()) or archive.testzip() is not None:
             raise RuntimeError("The release archive is incomplete or corrupt")
     print(f"Release ready: {ARCHIVE}")
