@@ -1,0 +1,4 @@
+Checks: '-*,clang-analyzer-core.*,clang-analyzer-cplusplus.*,bugprone-assert-side-effect,bugprone-dangling-handle,bugprone-infinite-loop,bugprone-sizeof-expression,bugprone-suspicious-memset-usage,performance-move-const-arg,performance-unnecessary-copy-initialization'
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*[/\\](Source|Tests|Packaging)[/\\].*'
+FormatStyle: file

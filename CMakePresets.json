@@ -1,0 +1,27 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25 },
+  "configurePresets": [
+    {
+      "name": "windows-release",
+      "displayName": "Windows x64 Release (VS 2022)",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build"
+    },
+    {
+      "name": "windows-tidy",
+      "displayName": "Windows x64 compile commands (Ninja)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-tidy",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release", "CMAKE_EXPORT_COMPILE_COMMANDS": "ON" }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-release",
+      "configurePreset": "windows-release",
+      "configuration": "Release",
+      "targets": ["Welleyz_VST3", "Welleyz_Standalone", "ProcessorBehaviourTest", "EditorSmokeTest", "FxEngineTest", "PresetCompatibility", "StandaloneTransportTest"]
+    }
+  ]
+}

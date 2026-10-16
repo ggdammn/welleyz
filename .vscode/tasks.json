@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Release",
+      "type": "process",
+      "command": "cmake",
+      "args": ["--build", "--preset", "windows-release"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Release package",
+      "type": "process",
+      "command": "python",
+      "args": ["scripts/release.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Format C++",
+      "type": "process",
+      "command": "python",
+      "args": ["scripts/tools.py", "format"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clang-tidy",
+      "type": "process",
+      "command": "python",
+      "args": ["scripts/tools.py", "tidy"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run tests",
+      "type": "process",
+      "command": "python",
+      "args": ["scripts/tools.py", "test"],
+      "problemMatcher": []
+    }
+  ]
+}

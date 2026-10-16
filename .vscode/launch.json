@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch welleyz Standalone",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Welleyz_artefacts/Release/Standalone/welleyz.exe",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build Release"
+    }
+  ]
+}

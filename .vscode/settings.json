@@ -1,0 +1,10 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configurePreset": "windows-release",
+  "cmake.buildPreset": "windows-release",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "editor.formatOnSave": true,
+  "[cpp]": { "editor.defaultFormatter": "xaver.clang-format" },
+  "[c]": { "editor.defaultFormatter": "xaver.clang-format" },
+  "files.encoding": "utf8"
+}
