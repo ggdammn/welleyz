@@ -1,17 +1,13 @@
+![Uploading welleyz cover.png…]()
+
+
+
 # About
 
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](LICENSE)
 
 welleyz is a chiptune synthesizer, which mainly focuses on constrained randomization.
 It runs as a VST3 instrument or a standalone application.
-
-## Screenshots
-
-> RANDOM page sound types, randomizer and presets.
-
-> OSC page oscillators and sound controls.
-
-> FX page filter, HAZE, TAPS and SPACE.
 
 ## Features
 
