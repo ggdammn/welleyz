@@ -4,9 +4,9 @@
   "configurePresets": [
     {
       "name": "windows-release",
-      "displayName": "Windows x64 Release (VS 2022)",
-      "generator": "Visual Studio 17 2022",
-      "binaryDir": "${sourceDir}/build"
+      "displayName": "Windows x64 Release (VS 2026)",
+      "generator": "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/build-vs2026"
     },
     {
       "name": "windows-tidy",

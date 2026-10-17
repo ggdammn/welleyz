@@ -1,5 +1,7 @@
 # About
 
+![welleyz synthesizer interface](screenshots/welleyz_cover.png)
+
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](LICENSE)
 
 welleyz is a chiptune synthesizer, which mainly focuses on constrained randomization.
