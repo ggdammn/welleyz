@@ -1,7 +1,3 @@
-![Uploading welleyz cover.png…]()
-
-
-
 # About
 
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](LICENSE)
